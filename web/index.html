@@ -1,0 +1,51 @@
+
+<html>
+    <head>
+        <title>App web </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>  
+        
+     
+    <div class="d-flex justify-content-around">
+        <div class="p-3 bd-highlight">
+        <h1>Formulario</h1>
+        <br>
+        <form method="POST" id="form" name="form"  >
+            <div class="form-group">
+                <label for="exampleInputName">Codigo</label>
+                <input class="form-control" type="text"  name="uno"  >
+            </div>
+            <div class="form-group">
+                <label for="exampleInputName">Nombre del libro</label>
+                <input class="form-control" type="text"  name="dos"  >
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Tipo de pasta</label>
+              <input type="text" class="form-control"  aria-describedby="emailHelp" name="tres">
+             
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Editorial</label>
+              <input type="text" class="form-control"  name="cuatro"  >
+            </div>
+            
+              <div class="form-group">
+              <label for="exampleInputPassword1">Año de publicacion</label>
+              <input type="text" class="form-control"  name="cinco" >
+            </div>
+            
+            <br>
+            <button type="button" onclick="enviarFormulario()" class="btn btn-warning">Guardar con JS</button>
+             <button type="button" class="btn btn-danger">Cancelar</button>
+        </form>   
+        </div>
+       
+        </div>
+    </body>
+</html>
